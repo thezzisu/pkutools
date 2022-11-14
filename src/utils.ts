@@ -19,10 +19,11 @@ export async function ask<T>(
   message: string
 ): Promise<T> {
   if (current) return current
-  const { input } = await prompts({
+  const ret = await prompts({
     type,
     name: 'input',
     message
   })
-  return input
+  if ('input' in ret) return ret.input
+  throw new Error('User cancelled')
 }
