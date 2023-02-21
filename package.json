@@ -1,13 +1,12 @@
 {
   "name": "pkutools",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "type": "module",
   "description": "CLI Tools for PKUers",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": "git@github.com:thezzisu/pkutools.git",
   "author": "thezzisu <thezzisu@gmail.com>",
-  "private": false,
   "files": [
     "lib"
   ],
@@ -16,8 +15,10 @@
     "@types/chai-as-promised": "^7.1.5",
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.11.9",
+    "@types/progress": "^2.0.5",
     "@types/prompts": "^2.4.1",
     "@types/qs": "^6.9.7",
+    "@types/tmp": "^0.2.3",
     "@types/yargs": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
@@ -33,8 +34,10 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "node-fetch": "^3.3.0",
+    "progress": "^2.0.3",
     "prompts": "^2.4.2",
     "reflect-metadata": "^0.1.13",
+    "tmp": "^0.2.1",
     "yargs": "^17.5.1"
   },
   "scripts": {
